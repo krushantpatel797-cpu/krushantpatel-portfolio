@@ -1,0 +1,171 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #1a0033, #0d001a);
+  color:white;
+  scroll-behavior:smooth;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  position:fixed;
+  width:100%;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:700;
+  color:#bb00ff;
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#ccc;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#bb00ff;
+}
+
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:150px 8% 100px;
+  flex-wrap:wrap;
+}
+
+.hero-text{
+  flex:1;
+  min-width:300px;
+}
+
+.hero-text h1{
+  font-size:42px;
+  color:#bb00ff;
+}
+
+.hero-text h2{
+  margin:10px 0;
+  font-weight:400;
+}
+
+.hero-img{
+  flex:1;
+  text-align:center;
+}
+
+.hero-img img{
+  width:260px;
+  border-radius:50%;
+  box-shadow:0 0 40px #bb00ff;
+  transition:0.5s;
+}
+
+.hero-img img:hover{
+  transform:scale(1.05);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 25px;
+  background:#bb00ff;
+  color:white;
+  border-radius:25px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#8800cc;
+}
+
+.section{
+  padding:100px 8%;
+  text-align:center;
+}
+
+.section h1{
+  margin-bottom:30px;
+  color:#bb00ff;
+}
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+  margin:20px 0;
+}
+
+.skills span{
+  background:rgba(255,255,255,0.08);
+  padding:8px 15px;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.skills span:hover{
+  background:#bb00ff;
+}
+
+.projects{
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:40px;
+}
+
+.card{
+  width:280px;
+  padding:20px;
+  border-radius:15px;
+  background:rgba(255,255,255,0.05);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 25px #bb00ff;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#0a0014;
+}
+
+/* Scroll Reveal */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+}
